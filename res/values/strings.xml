@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DeltaDrainforAndroid!</string>
+    <string name="app_name">Delta Drain for Android</string>
+    
+    <string name="buggerName">Enter Bugger Name</string>
+    <string name="deltaAmount">Enter Delta Amount</string>
+    <string name="deltaComment">Comments...</string>
+    <string name="deltaLocation">Where?</string>
+    <string name="buggertype">Bugger Type</string>
+    
+    <string name="bugger_type_1">Dangerous Fellow</string>
+    <string name="bugger_type_2">Cheap Ass</string>
+    <string name="bugger_type_3">Safe</string>
+    <string name="bugger_type_4">Kozhi</string>
+    
+    <string-array name="bugger_types">
+        <item>@string/bugger_type_1</item>
+        <item>@string/bugger_type_2</item>
+        <item>@string/bugger_type_3</item>
+        <item>@string/bugger_type_4</item>
+    </string-array>
+
+</resources>
