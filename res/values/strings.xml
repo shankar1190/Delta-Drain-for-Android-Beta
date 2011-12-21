@@ -14,6 +14,8 @@
     <string name="resetDelta">Reset Delta</string>
     <string name="updateBugger">Update</string>
     
+    <string name="desc">Splash Screen Image</string>
+    
     <string name="bugger_type_1">Dangerous Fellow</string>
     <string name="bugger_type_2">Cheap Fellow</string>
     <string name="bugger_type_3">Safe</string>
