@@ -60,8 +60,15 @@ public class BuggerInfoPage extends Activity {
 	
 	public void updateBugger(View v) {    
         GlobalData state = ((GlobalData)getApplicationContext());
-        Transaction t = new Transaction(Integer.parseInt(amount.getText().toString()),
-        								comments.getText().toString(),
+        
+        int amt;
+        try {
+        	amt = Integer.parseInt(amount.getText().toString());
+        } catch (NumberFormatException e) {
+        	amt = 0;
+        }
+        
+        Transaction t = new Transaction(amt, comments.getText().toString(),
         								loc.getText().toString());
         displayBugger.insertTransaction(t);
         
@@ -76,16 +83,20 @@ public class BuggerInfoPage extends Activity {
         
         editor.commit();
         
-        Intent buggerInfoPage = new Intent(BuggerInfoPage.this, BuggerInfoPage.class);
+     /* Intent buggerInfoPage = new Intent(BuggerInfoPage.this, BuggerInfoPage.class);
         buggerInfoPage.putExtra("buggerId", buggerNo);
         startActivity(buggerInfoPage);
+     */
+        startActivity(getIntent()); finish();
 	}
 	
 	public void buggerResetDelta(View v) {
 		displayBugger.resetDelta();
+
+		startActivity(getIntent()); finish();
 		
-		Intent buggerInfoPage = new Intent(BuggerInfoPage.this, BuggerInfoPage.class);
+	/*	Intent buggerInfoPage = new Intent(BuggerInfoPage.this, BuggerInfoPage.class);
         buggerInfoPage.putExtra("buggerId", buggerNo);
-        startActivity(buggerInfoPage);
+        startActivity(buggerInfoPage);  */
 	}
 }

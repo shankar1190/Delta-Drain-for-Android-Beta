@@ -10,6 +10,7 @@ package com.shankar1190.deltadrain;
 public final class R {
     public static final class array {
         public static final int bugger_types=0x7f050000;
+        public static final int menu_items=0x7f050001;
     }
     public static final class attr {
     }
@@ -39,19 +40,26 @@ public final class R {
         public static final int bugger_info=0x7f030000;
         public static final int list_item=0x7f030001;
         public static final int main=0x7f030002;
-        public static final int transaction_history=0x7f030003;
+        public static final int splash=0x7f030003;
+        public static final int transaction_history=0x7f030004;
     }
     public static final class string {
+        public static final int addNewBugger=0x7f040007;
         public static final int app_name=0x7f040001;
         public static final int buggerName=0x7f040002;
-        public static final int bugger_type_1=0x7f040007;
-        public static final int bugger_type_2=0x7f040008;
-        public static final int bugger_type_3=0x7f040009;
-        public static final int bugger_type_4=0x7f04000a;
+        public static final int bugger_type_1=0x7f04000b;
+        public static final int bugger_type_2=0x7f04000c;
+        public static final int bugger_type_3=0x7f04000d;
+        public static final int bugger_type_4=0x7f04000e;
         public static final int buggertype=0x7f040006;
         public static final int deltaAmount=0x7f040003;
         public static final int deltaComment=0x7f040004;
         public static final int deltaLocation=0x7f040005;
         public static final int hello=0x7f040000;
+        public static final int menu_item_1=0x7f04000f;
+        public static final int menu_item_2=0x7f040010;
+        public static final int resetDelta=0x7f040009;
+        public static final int updateBugger=0x7f04000a;
+        public static final int viewHistory=0x7f040008;
     }
 }

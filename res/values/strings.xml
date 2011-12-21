@@ -6,20 +6,32 @@
     
     <string name="buggerName">Enter Bugger Name</string>
     <string name="deltaAmount">Enter Delta Amount</string>
-    <string name="deltaComment">Comments...</string>
+    <string name="deltaComment">Comments</string>
     <string name="deltaLocation">Where?</string>
     <string name="buggertype">Bugger Type</string>
+    <string name="addNewBugger">Add a new Bugger</string>
+    <string name="viewHistory">View Transaction History</string>
+    <string name="resetDelta">Reset Delta</string>
+    <string name="updateBugger">Update</string>
     
     <string name="bugger_type_1">Dangerous Fellow</string>
-    <string name="bugger_type_2">Cheap Ass</string>
+    <string name="bugger_type_2">Cheap Fellow</string>
     <string name="bugger_type_3">Safe</string>
-    <string name="bugger_type_4">Kozhi</string>
+    <string name="bugger_type_4">Bank</string>
+    
+    <string name="menu_item_1">View Bugger Info</string>
+    <string name="menu_item_2">Remove Bugger</string>
     
     <string-array name="bugger_types">
         <item>@string/bugger_type_1</item>
         <item>@string/bugger_type_2</item>
         <item>@string/bugger_type_3</item>
         <item>@string/bugger_type_4</item>
+    </string-array>
+    
+    <string-array name="menu_items">
+        <item>@string/menu_item_1</item>
+        <item>@string/menu_item_2</item>
     </string-array>
 
 </resources>

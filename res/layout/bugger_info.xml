@@ -1,82 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <TableRow>
         <TextView
             android:id="@+id/buggerInfoName"
-            android:gravity="left"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
-    </TableRow>
 
-    <TableRow>
         <TextView
             android:id="@+id/buggerInfoType"
-            android:gravity="left"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
-    </TableRow>
-    <TableRow>
+
+
         <TextView
             android:id="@+id/buggerInfoDelta"
-            android:gravity="left"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
-    </TableRow>
+
         
-    <TableRow>
         <Button
 		    android:id="@+id/buggerInfoViewHistory"
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
 		    android:onClick="viewHistory"
-		    android:text="View Transaction History"
+		    android:text="@string/viewHistory"
 		/>
-    </TableRow>
-    <TableRow>
+
         <Button
 		    android:id="@+id/buggerResetDelta"
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
 		    android:onClick="buggerResetDelta"
-		    android:text="Reset Delta"
+		    android:text="@string/resetDelta"
 		/>
-    </TableRow>
-    
-    <TableRow>
-		<EditText
+
+        <EditText
 		    android:id="@+id/EditTextAddDelta"
 		    android:layout_height="wrap_content"
 		    android:hint="@string/deltaAmount"
 		    android:layout_width="fill_parent"
 		/>
-    </TableRow>
-    <TableRow>
+
 		<EditText
 		    android:id="@+id/EditTextAddLocation"
 		    android:layout_height="wrap_content"
 		    android:hint="@string/deltaLocation"
 		    android:layout_width="fill_parent"
 		/>
-    </TableRow>
-        
-    <TableRow>
-        <EditText 
+
+		<EditText 
 		    android:id="@+id/EditTextAddComment"
 		    android:layout_height="wrap_content"
 		    android:hint="@string/deltaComment"
 		    android:layout_width="fill_parent"
 		/>       
-    </TableRow>
-    <TableRow>
-        <Button
+		
+		<Button
 		    android:id="@+id/buggerInfoAddBtn"
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
 		    android:onClick="updateBugger"
-		    android:text="Update"   
+		    android:text="@string/updateBugger"   
 		/>
-    </TableRow>
-</TableLayout>
+</LinearLayout>
