@@ -83,20 +83,11 @@ public class BuggerInfoPage extends Activity {
         
         editor.commit();
         
-     /* Intent buggerInfoPage = new Intent(BuggerInfoPage.this, BuggerInfoPage.class);
-        buggerInfoPage.putExtra("buggerId", buggerNo);
-        startActivity(buggerInfoPage);
-     */
         startActivity(getIntent()); finish();
 	}
 	
 	public void buggerResetDelta(View v) {
 		displayBugger.resetDelta();
-
 		startActivity(getIntent()); finish();
-		
-	/*	Intent buggerInfoPage = new Intent(BuggerInfoPage.this, BuggerInfoPage.class);
-        buggerInfoPage.putExtra("buggerId", buggerNo);
-        startActivity(buggerInfoPage);  */
 	}
 }

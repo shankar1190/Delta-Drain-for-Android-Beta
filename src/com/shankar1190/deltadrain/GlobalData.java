@@ -2,7 +2,6 @@ package com.shankar1190.deltadrain;
 
 /*
  * @author: shankar1190
- * ... Testing Git ... 20 Dec 2011 5:52 PM 
  */
 
 import java.util.ArrayList;

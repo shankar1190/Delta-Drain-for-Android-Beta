@@ -3,6 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
         <TextView
+            android:scrollbars="vertical"
             android:id="@+id/tr1"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" />
