@@ -46,7 +46,7 @@ public class DeltaDrainforAndroid extends Activity {
         String nameList = settings.getString("names", "NULL");
         String buggerList = settings.getString("buggers", "NULL");
         
-        // settings.edit().clear().commit();
+        settings.edit().clear().commit();
         
         GlobalData state = ((GlobalData)getApplicationContext());
         buggerNames = state.myBuggerNames;

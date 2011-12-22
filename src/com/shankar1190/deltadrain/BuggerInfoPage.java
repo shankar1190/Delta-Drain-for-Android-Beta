@@ -42,14 +42,14 @@ public class BuggerInfoPage extends Activity {
 	    
 	    int delta = displayBugger.getDelta();
 	    String displayString = "";
-	    if (delta < 0) {
+	    if (delta <= 0) {
 	    	displayString = "Bugger owes you ";
 	    } else {
 	    	displayString = "You owe Bugger ";
 	    }
 	    
 	    TextView tv2 = (TextView) findViewById(R.id.buggerInfoDelta);
-	    tv2.setText(displayString + ((Integer)(-delta)).toString() + " bucks");
+	    tv2.setText(displayString + ((Integer)(Math.abs(delta))).toString() + " bucks");
 	    
 	    String type = displayBugger.getType();
 	    TextView tv3 = (TextView) findViewById(R.id.buggerInfoType);
@@ -103,6 +103,17 @@ public class BuggerInfoPage extends Activity {
 	
 	public void buggerResetDelta(View v) {
 		displayBugger.resetDelta();
+        GlobalData state = ((GlobalData)getApplicationContext());
+        Gson gson = new Gson();
+        String jsonNameList = gson.toJson(state.myBuggerNames);
+        String jsonBuggerList = gson.toJson(state.myBuggers);
+        
+        SharedPreferences saveData = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = saveData.edit();
+        editor.putString("names", jsonNameList);
+        editor.putString("buggers", jsonBuggerList);
+        
+        editor.commit();
 		startActivity(getIntent()); finish();
 	}
 }
