@@ -15,13 +15,14 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int splash_image=0x7f020001;
+        public static final int custom_button=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
+        public static final int splash_image=0x7f020002;
     }
     public static final class id {
-        public static final int EditTextAddComment=0x7f060007;
-        public static final int EditTextAddDelta=0x7f060005;
-        public static final int EditTextAddLocation=0x7f060006;
+        public static final int EditTextAddComment=0x7f060006;
+        public static final int EditTextAddDelta=0x7f060004;
+        public static final int EditTextAddLocation=0x7f060005;
         public static final int EditTextAmount=0x7f06000b;
         public static final int EditTextBuggerName=0x7f06000a;
         public static final int EditTextComments=0x7f06000d;
@@ -29,13 +30,13 @@ public final class R {
         public static final int ImageView01=0x7f060010;
         public static final int SpinnerBuggerType=0x7f06000e;
         public static final int addBtn=0x7f06000f;
-        public static final int buggerInfoAddBtn=0x7f060008;
+        public static final int buggerInfoAddBtn=0x7f060007;
         public static final int buggerInfoDelta=0x7f060002;
         public static final int buggerInfoName=0x7f060000;
         public static final int buggerInfoType=0x7f060001;
         public static final int buggerInfoViewHistory=0x7f060003;
         public static final int buggerList=0x7f060009;
-        public static final int buggerResetDelta=0x7f060004;
+        public static final int buggerResetDelta=0x7f060008;
         public static final int tr1=0x7f060011;
     }
     public static final class layout {

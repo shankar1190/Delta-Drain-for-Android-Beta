@@ -9,6 +9,7 @@ import com.google.gson.Gson;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
@@ -37,13 +38,27 @@ public class BuggerInfoPage extends Activity {
 	    displayBugger = (Bugger)state.myBuggers.get(buggerNo);
 	    
 	    TextView tv1 = (TextView) findViewById(R.id.buggerInfoName);
-	    tv1.setText("Name: " + displayBugger.getName());
+	    tv1.setText(displayBugger.getName());
+	    
+	    int delta = displayBugger.getDelta();
+	    String displayString = "";
+	    if (delta < 0) {
+	    	displayString = "Bugger owes you ";
+	    } else {
+	    	displayString = "You owe Bugger ";
+	    }
 	    
 	    TextView tv2 = (TextView) findViewById(R.id.buggerInfoDelta);
-	    tv2.setText("Delta: " + ((Integer)displayBugger.getDelta()).toString());
+	    tv2.setText(displayString + ((Integer)(-delta)).toString() + " bucks");
 	    
+	    String type = displayBugger.getType();
 	    TextView tv3 = (TextView) findViewById(R.id.buggerInfoType);
-	    tv3.setText("Type: " + displayBugger.getType());
+	    tv3.setText(type);
+	    if (type.equals("Dangerous Fellow") || type.equals("Cheap Fellow")) {
+	    	tv3.setTextColor(Color.parseColor("red"));
+	    } else {
+	    	tv3.setTextColor(Color.parseColor("green"));
+	    } 
 	    
 	    amount = (EditText) findViewById(R.id.EditTextAddDelta);
         comments = (EditText) findViewById(R.id.EditTextAddComment);

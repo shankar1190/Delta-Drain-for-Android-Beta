@@ -7,18 +7,30 @@
         <TextView
             android:id="@+id/buggerInfoName"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+			android:textStyle="bold"
+            android:typeface="sans"
+            android:padding="6dip"
+            android:textSize="26dip"
+            android:gravity="center"
+        />
 
         <TextView
             android:id="@+id/buggerInfoType"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:gravity="center"
+		 />
 
         <TextView
             android:id="@+id/buggerInfoDelta"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:textSize="18dip"
+            android:gravity="center"
+         />
 
         
         <Button
@@ -27,14 +39,11 @@
 		    android:layout_height="wrap_content"
 		    android:onClick="viewHistory"
 		    android:text="@string/viewHistory"
-		/>
-
-        <Button
-		    android:id="@+id/buggerResetDelta"
-		    android:layout_width="fill_parent"
-		    android:layout_height="wrap_content"
-		    android:onClick="buggerResetDelta"
-		    android:text="@string/resetDelta"
+		    android:padding="10dip"
+		    android:textSize="16dip"
+		    android:textColor="#bebebe"
+		    android:background="@drawable/custom_button"
+		    android:layout_marginBottom="10dip"
 		/>
 
         <EditText
@@ -42,6 +51,7 @@
 		    android:layout_height="wrap_content"
 		    android:hint="@string/deltaAmount"
 		    android:layout_width="fill_parent"
+		    android:padding="10dip"
 		/>
 
 		<EditText
@@ -49,6 +59,7 @@
 		    android:layout_height="wrap_content"
 		    android:hint="@string/deltaLocation"
 		    android:layout_width="fill_parent"
+		    android:padding="10dip"
 		/>
 
 		<EditText 
@@ -56,6 +67,7 @@
 		    android:layout_height="wrap_content"
 		    android:hint="@string/deltaComment"
 		    android:layout_width="fill_parent"
+		    android:padding="10dip"
 		/>       
 		
 		<Button
@@ -63,6 +75,24 @@
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
 		    android:onClick="updateBugger"
-		    android:text="@string/updateBugger"   
+		    android:text="@string/updateBugger"
+		    android:padding="10dip"
+		    android:textSize="16dip"
+		    android:textColor="#bebebe"
+		    android:background="@drawable/custom_button"
 		/>
+		
+        <Button
+		    android:id="@+id/buggerResetDelta"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:onClick="buggerResetDelta"
+		    android:text="@string/resetDelta"
+		    android:textSize="16dip"
+		    android:textColor="#bebebe"
+		    android:padding="10dip"
+		    android:background="@drawable/custom_button"
+		    android:layout_marginTop="10dip"
+		/>
+		
 </LinearLayout>

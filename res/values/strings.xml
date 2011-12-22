@@ -5,7 +5,7 @@
     <string name="app_name">Delta Drain for Android</string>
     
     <string name="buggerName">Enter Bugger Name</string>
-    <string name="deltaAmount">Enter Delta Amount</string>
+    <string name="deltaAmount">Enter Delta Amount (-ve if you\'re lending</string>
     <string name="deltaComment">Comments</string>
     <string name="deltaLocation">Where?</string>
     <string name="buggertype">Bugger Type</string>
